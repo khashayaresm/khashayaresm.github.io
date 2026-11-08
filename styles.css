@@ -124,6 +124,85 @@ a:focus-visible {
   color: var(--text-meta);
 }
 
+.profile-photo {
+  display: block;
+  width: 112px;
+  height: 112px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.lab-gallery,
+.lab-photo {
+  margin-top: 8px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-section);
+}
+
+.lab-gallery-title {
+  margin-bottom: 14px;
+  font-family: var(--font-ui);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.image-grid figure,
+.lab-photo {
+  min-width: 0;
+}
+
+.image-grid img,
+.lab-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  background: var(--paper);
+  object-fit: cover;
+}
+
+.image-grid img.portrait-crop {
+  object-position: 50% 58%;
+}
+
+.lab-photo img {
+  aspect-ratio: 16 / 10;
+}
+
+.image-grid figcaption,
+.lab-photo figcaption {
+  margin-top: 7px;
+  color: var(--text-meta);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+@media (max-width: 680px) {
+  .profile-photo {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 16px;
+  }
+
+  .image-grid {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .section-nav {
   display: grid;
   gap: 7px;

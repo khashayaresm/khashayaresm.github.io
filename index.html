@@ -39,6 +39,7 @@
     <aside class="sidebar" aria-label="Profile and navigation">
       <div class="sidebar-inner">
         <header class="identity">
+          <img class="profile-photo" src="./assets/images/profile.webp" alt="Portrait of Khashayar Esmaeilzadeh" width="460" height="460" fetchpriority="high" decoding="async">
           <h1>Khashayar<br> Esmaeilzadeh</h1>
           <p>Research Assistant<br>Circuits, Cognition &amp; Control Lab<br>ICPBR, ION, Chinese Academy of Sciences</p>
           <p class="location">Shanghai, China</p>
@@ -87,9 +88,9 @@
               <p class="project-meta">May 2026 — Present · With Heting Zhang</p>
             </div>
             <ul>
-              <li>I am the lead developer of the MATLAB/Psychtoolbox implementation and its experiment-design, session-monitoring, and offline-analysis interfaces.</li>
-              <li>I implemented synchronized behavioral and EyeLink event recording, reproducible session configurations, versioned data schemas, automated tests, and technical documentation.</li>
-              <li>I integrated display calibration and configurable EEG/photodiode synchronization. I also operate human pilot sessions and train lab members in data-collection procedures.</li>
+              <li>I led development of a ~42k-line MATLAB/R platform with 4 experiment-control GUIs and a 432-test suite, integrating Psychtoolbox, EyeLink, multimodal input, and versioned data schemas.</li>
+              <li>I built EyeLink validation for 26 sessions, accepting 21 and flagging 5 unreliable clock synchronizations; the system also supports mid-session recalibration and per-trial gaze, pupil, and blink alignment.</li>
+              <li>I implemented per-machine gamma CLUT and isoluminant-color calibration with full provenance, plus configurable EEG/photodiode synchronization. I also operate human pilot sessions and train lab members in data-collection procedures.</li>
             </ul>
           </div>
 
@@ -120,8 +121,8 @@
               <p class="project-meta">May 2026 — Present</p>
             </div>
             <ul>
-              <li>I develop interactive MATLAB tools for reviewing previously collected behavioral, single-unit, and laminar local-field-potential data.</li>
-              <li>The interfaces support event-aligned raster and spike-density displays, condition and neuron selection, behavioral performance measures, current-source-density estimation, and spectral analyses.</li>
+              <li>I built an ~11k-line MATLAB analysis toolkit for previously collected behavioral, single-unit, and laminar local-field-potential data.</li>
+              <li>It combines event-aligned SDF/raster views, inhibition analysis, current-source-density estimation, spectral analyses, and data-quality interfaces.</li>
             </ul>
           </div>
 
@@ -131,11 +132,16 @@
               <p class="project-meta">Apr 2026 — Present</p>
             </div>
             <ul>
-              <li>I assist with planning electrophysiology laboratory spaces, evaluating neural-recording systems, and integrating touchscreen, eye-tracking, EEG, and related acquisition hardware.</li>
-              <li>I maintain version-controlled development and documentation workflows shared across laboratory computers.</li>
-              <li>My experimental work includes preliminary rhesus macaque handling and training.</li>
+              <li>I contributed to establishing a 5-person NHP laboratory through 3D space planning, recording-system evaluation, and integration of touchscreen, eye-tracking, EEG, and related acquisition hardware.</li>
+              <li>I standardized Git-based multi-computer development with automated sanity checks, versioned data schemas, human-readable exports, and cloud-synchronized backups.</li>
+              <li>I handled 3 rhesus macaques and began pull/chair familiarization with 1.</li>
             </ul>
           </div>
+
+          <figure class="lab-photo">
+            <img src="./assets/images/c3-lab-01.webp" alt="Circuits, Cognition and Control Lab members at a group dinner" width="1280" height="960" loading="lazy" decoding="async">
+            <figcaption>Circuits, Cognition &amp; Control Lab members</figcaption>
+          </figure>
         </article>
 
         <article class="experience">
@@ -155,8 +161,8 @@
               <p class="project-meta">Oct 2024 — Apr 2026</p>
             </div>
             <ul>
-              <li>I designed and built behavioral assays, operated experiments, and assisted with stereotaxic procedures and laboratory setup.</li>
-              <li>I developed and tested multiple assay prototypes and collected behavioral data for the measurement of song preference.</li>
+              <li>I designed and iterated &gt;4 behavioral assay prototypes for female song-preference measurement, evaluating them in &gt;10 zebra finches.</li>
+              <li>I operated experiments, collected behavioral data, and assisted with stereotaxic procedures and laboratory setup.</li>
             </ul>
           </div>
 
@@ -166,8 +172,8 @@
               <p class="project-meta">Oct 2024 — Apr 2026</p>
             </div>
             <ul>
-              <li>I designed and tested lightweight head-stage preamplifiers and Python software for online LFP/spike detection and visualization.</li>
-              <li>This work included circuit and PCB design, saline-bath and in-vivo testing, recording-system debugging, and offline spike sorting.</li>
+              <li>I designed and tested &gt;3 headstage preamplifier prototypes across saline-bath, anesthetized, and behaving preparations (&gt;10 birds), reducing systematic noise to operational spike-recording levels.</li>
+              <li>I built a modular recording system with STM32 acquisition and real-time Python visualization, validated against a neural signal simulator and reported in a first-author bioRxiv preprint.</li>
             </ul>
             <p class="resource-links">
               <a href="https://github.com/khashayaresm/preamp" target="_blank" rel="noopener noreferrer">Hardware</a>
@@ -177,12 +183,21 @@
 
           <div class="project">
             <div class="project-heading">
+              <h4>Stereotaxic Surgery and Electrophysiology</h4>
+            </div>
+            <ul>
+              <li>I led 3 stereotaxic craniotomies and assisted in 10, targeting Field L and HVC for chronic electrophysiology in adult zebra finches.</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-heading">
               <h4>Pharmacological Manipulation of Vocal Communication</h4>
               <p class="project-meta">Mar 2025 — Apr 2026</p>
             </div>
             <ul>
-              <li>I contributed to experimental design, collected behavioral and neural pilot data, and analyzed behavioral responses using signal-detection methods.</li>
-              <li>I also assisted with stereotaxic surgery, drug administration, and neural-recording procedures.</li>
+              <li>I designed and ran a ketamine auditory-response paradigm (n=7; &gt;20 sessions), including behavioral assays, drug administration, and data collection.</li>
+              <li>I analyzed early-pilot data (n=3) using signal-detection theory and conducted a 60-minute iEEG startle session (n=1; ketamine vs saline).</li>
             </ul>
           </div>
 
@@ -192,9 +207,31 @@
               <p class="project-meta">Sep 2025 — Apr 2026</p>
             </div>
             <ul>
-              <li>I collected and classified behavioral responses to auditory stimuli across different recording contexts.</li>
+              <li>I led context-dependent distance-call data collection across 10 zebra finches and 30 sessions, including behavioral classification and audio/video processing.</li>
             </ul>
           </div>
+
+          <section class="lab-gallery" aria-label="Birds Lab and IPM photographs">
+            <h4 class="lab-gallery-title">Birds Lab and IPM</h4>
+            <div class="image-grid">
+              <figure>
+                <img src="./assets/images/birds-lab-01.webp" alt="Four Birds Lab members beside the zebra finch aviary" width="1600" height="1200" loading="lazy" decoding="async">
+                <figcaption>Birds Lab and the zebra finch facility</figcaption>
+              </figure>
+              <figure>
+                <img src="./assets/images/birds-lab-02.webp" alt="Birds Lab members in the IPM common room" width="1600" height="1200" loading="lazy" decoding="async">
+                <figcaption>Birds Lab members at IPM</figcaption>
+              </figure>
+              <figure>
+                <img class="portrait-crop" src="./assets/images/birds-lab-03.webp" alt="Three researchers in laboratory respiratory equipment" width="1200" height="1600" loading="lazy" decoding="async">
+                <figcaption>Laboratory work at IPM</figcaption>
+              </figure>
+              <figure>
+                <img src="./assets/images/ipm-01.webp" alt="Researchers at an academic neuroscience meeting" width="1280" height="853" loading="lazy" decoding="async">
+                <figcaption>Academic neuroscience meeting</figcaption>
+              </figure>
+            </div>
+          </section>
         </article>
 
         <article class="experience">
@@ -211,9 +248,9 @@
               <h4>Diffusion MRI Denoising and Reconstruction</h4>
             </div>
             <ul>
-              <li>I designed and evaluated spatial-frequency-domain filtering methods for diffusion MRI using simulated and retrospective data and quantitative image-quality metrics.</li>
-              <li>I compared polar Fourier and Cartesian regridding reconstructions and conducted phantom data acquisition on a Siemens Trio MRI system.</li>
-              <li>I drafted the resulting ISMRM abstract and IEEE conference paper, recorded the ISMRM presentation, and presented the work at ICEE 2024.</li>
+              <li>I developed a directionally aligned k-space filter for 30-direction DTI, increasing SNR by 39.89% at tested input SNR 55 and reducing FA-map RMSE/MAE degradation rates by 46.3%/47.6% in simulations.</li>
+              <li>I compared polar Fourier and Cartesian regridding reconstructions, diagnosed implementation artifacts, and acquired phantom data on a Siemens Trio MRI system.</li>
+              <li>I first-authored the resulting ISMRM 2024 abstract and ICEE 2024 IEEE paper, drafted both works, recorded the ISMRM presentation, and presented at ICEE.</li>
             </ul>
             <p class="resource-links">
               <a href="https://archive.ismrm.org/2024/2148.html" target="_blank" rel="noopener noreferrer">ISMRM abstract</a>
@@ -243,7 +280,7 @@
         <div class="compact-entry">
           <div>
             <h3>Prior Expectations Modulate Neural Activity in Mice</h3>
-            <p>Neuromatch Academy · Collaborative analysis of single-neuron and population activity in the International Brain Laboratory dataset. <a href="https://github.com/mr-sina-imani/neuromatch-2025-synaptic-symphony" target="_blank" rel="noopener noreferrer">Project repository</a></p>
+            <p>Neuromatch Academy · Collaborative analysis of International Brain Laboratory data, developing a single-neuron prior-effect index and PCA-based regional trajectories to compare activity across prior conditions. <a href="https://github.com/mr-sina-imani/neuromatch-2025-synaptic-symphony" target="_blank" rel="noopener noreferrer">Project repository</a></p>
           </div>
           <p class="date">Jul 2025</p>
         </div>
